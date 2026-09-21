@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Health Monitoring Camp — Madanapalle | Dashboard</title>
+<meta name="description" content="Aggregated school health screening dashboard for the joint camp at C.S.I. Girls High School and A.A.M. Elementary School, Madanapalle, by Swaasthya Hospitals and The Satsang Foundation.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Dashboard styles -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==================== TOP BAR ==================== -->
+<div class="top-bar">
+  <div class="container-xl px-3 px-lg-4">
+    <div class="logo-row">
+      <img src="images/logo-1.png" alt="Swaasthya Hospitals" class="org-logo">
+      <div class="logo-divider"></div>
+      <img src="images/logo-2.webp" alt="The Satsang Foundation" class="org-logo">
+      <span class="powered-badge"><i class="bi bi-heart-pulse-fill"></i> Powered by Swaasthya Hospitals × The Satsang Foundation</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" style="background-image:url('images/img-5.jpeg');">
+  <div class="container-xl px-3 px-lg-4">
+    <div class="hero-content">
+      <span class="hero-eyebrow"><i class="bi bi-clipboard2-pulse"></i> Medical Camp Data Analysis Dashboard</span>
+      <h1>School Health<br>Monitoring Camp</h1>
+      <p class="lead">C.S.I. Girls High School &amp; A.A.M. Elementary School, Madanapalle — a joint screening initiative covering growth (BMI), vision, dental and general health.</p>
+      <div class="hero-stats">
+        <div class="stat"><b id="recordCount">—</b><span>Students Screened</span></div>
+        <div class="stat"><b id="heroLocations">—</b><span>Camp Locations</span></div>
+        <div class="stat"><b id="heroDomains">—</b><span>Screening Domains</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== KPI CARDS ==================== -->
+  <section class="section">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-bar-chart-line"></i> At a glance</span>
+        <h2>Camp screening snapshot</h2>
+        <p>Every figure below is calculated from the aggregated, de-identified screening dataset.</p>
+      </div>
+      <div class="kpi-grid" id="kpiGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== DEMOGRAPHICS + PHOTO ==================== -->
+  <section class="section section-tint">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-people"></i> Who we screened</span>
+        <h2>Demographics</h2>
+        <p>Gender and age spread of the students screened across both schools.</p>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="chart-card reveal">
+            <h3>Gender Distribution</h3>
+            <p class="chart-sub">Share of students screened, by gender</p>
+            <div class="chart-wrap"><canvas id="chartGender"></canvas></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="chart-card reveal">
+            <h3>Age Distribution</h3>
+            <p class="chart-sub">Students grouped into camp-relevant age bands</p>
+            <div class="chart-wrap"><canvas id="chartAge"></canvas></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="photo-feature reveal">
+            <img src="images/img-3.jpeg" alt="Students queued for health screening registration" loading="lazy">
+            <div class="caption">Registration &amp; Health Screening — C.S.I. Girls High School</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BMI ==================== -->
+  <section class="section">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-speedometer2"></i> Growth &amp; nutrition</span>
+        <h2>BMI screening</h2>
+        <p>Body Mass Index status, calculated from measured height and weight at the camp.</p>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="photo-feature reveal">
+            <img src="images/img-6.jpeg" alt="Weight assessment using a digital scale" loading="lazy">
+            <div class="caption">Weight Assessment — A.A.M. Elementary School</div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="chart-card reveal">
+            <h3>BMI Status</h3>
+            <p class="chart-sub">Proportion of students in each BMI category</p>
+            <div class="chart-wrap"><canvas id="chartBmiStatus"></canvas></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="chart-card reveal">
+            <h3>BMI Distribution</h3>
+            <p class="chart-sub">Number of students by BMI range</p>
+            <div class="chart-wrap"><canvas id="chartBmiHist"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISION + DENTAL ==================== -->
+  <section class="section section-tint">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-eye"></i> Vision &amp; dental</span>
+        <h2>Vision and dental screening</h2>
+        <p>Distance-vision (Snellen) results and the most common dental examination findings.</p>
+      </div>
+      <div class="row g-4 align-items-stretch mb-4">
+        <div class="col-lg-4">
+          <div class="photo-feature reveal">
+            <img src="images/img-1.jpeg" alt="Vision screening using a Snellen chart" loading="lazy">
+            <div class="caption">Vision Screening — Snellen Chart Assessment</div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="chart-card reveal h-100">
+            <h3>Vision Screening Results</h3>
+            <p class="chart-sub">Distance vision (Snellen). “Normal” counts only students who were tested; students with no reading are shown as “Not Tested”.</p>
+            <div class="chart-wrap"><canvas id="chartVision"></canvas></div>
+            <p class="chart-note" id="visionNote"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-8">
+          <div class="chart-card reveal h-100">
+            <h3>Most Common Dental Findings</h3>
+            <p class="chart-sub">Number of students with each recorded dental finding (findings seen in fewer than 5 students are not shown)</p>
+            <div class="chart-wrap tall"><canvas id="chartDental"></canvas></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="photo-feature reveal">
+            <img src="images/img-4.jpeg" alt="Dental examination of a student" loading="lazy">
+            <div class="caption">Dental Examination — Oral Health Check</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NUTRITION + ILLNESS ==================== -->
+  <section class="section">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-clipboard2-pulse"></i> General health</span>
+        <h2>Nutrition &amp; illness patterns</h2>
+        <p>General health observations and the most frequently recorded acute or chronic conditions.</p>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="chart-card reveal h-100" id="nutritionCardWrap">
+            <h3>Nutritional &amp; General Health</h3>
+            <p class="chart-sub">Students with a recorded nutrition-related observation</p>
+            <div class="chart-wrap"><canvas id="chartNutrition"></canvas></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="chart-card reveal h-100">
+            <h3>Recent Illness Patterns</h3>
+            <p class="chart-sub">Most frequently recorded conditions (grouped to protect privacy where counts are small)</p>
+            <div class="chart-wrap tall"><canvas id="chartIllness"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KEY FINDINGS ==================== -->
+  <section class="section section-tint">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-search"></i> Key findings</span>
+        <h2>🔍 What the screening data shows</h2>
+        <p>Findings are calculated directly from the dataset. Wording describes what screening identified — not a medical diagnosis.</p>
+      </div>
+      <div class="row g-3" id="keyFindings"></div>
+    </div>
+  </section>
+
+  <!-- ==================== PRIORITY AREAS ==================== -->
+  <section class="section">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="section-head">
+            <span class="section-kicker"><i class="bi bi-list-ol"></i> Ranked by frequency</span>
+            <h2>⚕️ Areas requiring attention</h2>
+            <p>Screening findings ranked by how many students they affected — for planning follow-up, not as a diagnosis.</p>
+          </div>
+          <div class="chart-card reveal" id="priorityAreas"></div>
+        </div>
+        <div class="col-lg-5">
+          <div class="mh-card reveal h-100" id="mentalHealthCard" style="display:flex; flex-direction:column; justify-content:center;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CAROUSEL ==================== -->
+  <section class="section section-tint">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-images"></i> On the ground</span>
+        <h2>Camp activities</h2>
+        <p>Moments from the screening camp at both schools.</p>
+      </div>
+      <div id="campCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#campCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#campCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#campCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#campCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#campCarousel" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img-1.jpeg" alt="Vision screening">
+            <div class="carousel-caption"><h5>Vision Screening</h5><p>Distant vision assessed using a Snellen chart.</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img-2.jpeg" alt="Height assessment">
+            <div class="carousel-caption"><h5>Height and Weight Assessment</h5><p>Height measured against a wall-mounted growth chart.</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img-3.jpeg" alt="Health screening registration">
+            <div class="carousel-caption"><h5>Health Screening</h5><p>Students queued for registration and general assessment.</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img-4.jpeg" alt="Dental examination">
+            <div class="carousel-caption"><h5>Dental Examination</h5><p>Oral health check conducted by the camp's dental team.</p></div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img-6.jpeg" alt="Student health assessment">
+            <div class="carousel-caption"><h5>Student Health Assessment</h5><p>Weight recorded as part of the general health check.</p></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#campCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#campCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FILTERS + TABLE ==================== -->
+  <section class="section">
+    <div class="container-xl px-3 px-lg-4">
+      <div class="section-head">
+        <span class="section-kicker"><i class="bi bi-sliders"></i> Explore the data</span>
+        <h2>Filter &amp; browse indicators</h2>
+        <p>Filters update the KPI cards and the gender, age and BMI charts from pre-computed group totals — no individual record exists in the published data, and any group of fewer than 5 students is hidden.</p>
+      </div>
+
+      <div class="filter-bar reveal mb-4">
+        <div class="filter-field">
+          <label for="filterGender">Gender</label>
+          <select id="filterGender" class="form-select">
+            <option value="all">All</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filterAge">Age Group</label>
+          <select id="filterAge" class="form-select">
+            <option value="all">All</option>
+            <option value="Up to 8">Up to 8 yrs</option>
+            <option value="9-11">9–11 yrs</option>
+            <option value="12-14">12–14 yrs</option>
+            <option value="15-17">15–17 yrs</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filterBmi">BMI Status</label>
+          <select id="filterBmi" class="form-select">
+            <option value="all">All</option>
+            <option value="Normal">Normal</option>
+            <option value="Overweight">Overweight</option>
+            <option value="Underweight">Underweight</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filterReferral">Referral Status</label>
+          <select id="filterReferral" class="form-select">
+            <option value="all">All</option>
+            <option value="yes">Specialist Referral Advised</option>
+            <option value="no">No Referral Advised</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="filterFinding">Health Finding</label>
+          <select id="filterFinding" class="form-select">
+            <option value="all">All</option>
+            <option value="vision_concern">Vision Concern</option>
+            <option value="dental_finding">Dental Finding</option>
+            <option value="nutrition_finding">Nutrition Finding</option>
+            <option value="acute_illness">Acute Illness</option>
+          </select>
+        </div>
+        <button class="btn-reset-filters" id="resetFilters"><i class="bi bi-arrow-counterclockwise"></i> Reset Filters</button>
+        <span class="filter-status" id="filterStatus"></span>
+      </div>
+
+      <div class="table-card reveal">
+        <div class="table-toolbar">
+          <h3 class="mb-0">Screening Indicator Summary</h3>
+          <input type="search" id="tableSearch" class="form-control" placeholder="Search indicators…">
+        </div>
+        <div class="table-responsive">
+          <table class="table" id="summaryTable">
+            <thead>
+              <tr>
+                <th data-col="indicator">Health Indicator</th>
+                <th data-col="students">Students</th>
+                <th data-col="percent">Percentage</th>
+                <th data-col="status">Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <span class="text-body-secondary small" id="tablePageInfo"></span>
+          <div class="btn-group">
+            <button class="btn btn-outline-secondary btn-sm" id="prevPage"><i class="bi bi-chevron-left"></i></button>
+            <button class="btn btn-outline-secondary btn-sm" id="nextPage"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container-xl px-3 px-lg-4">
+    <div class="row g-4">
+      <div class="col-md-5">
+        <div class="d-flex gap-2 org-logos mb-3">
+          <img src="images/logo-1.png" alt="Swaasthya Hospitals">
+          <img src="images/logo-2.webp" alt="The Satsang Foundation">
+        </div>
+        <h5>School Health Monitoring Camp</h5>
+        <p class="small">Madanapalle — a joint initiative of Swaasthya Hospitals and The Satsang Foundation.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Organizations</h5>
+        <p class="small mb-1">Swaasthya Hospitals</p>
+        <p class="small">The Satsang Foundation</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Camp Locations</h5>
+        <p class="small mb-1">C.S.I. Girls High School, Madanapalle</p>
+        <p class="small">A.A.M. Elementary School, Madanapalle</p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p class="mb-1">Data presented for screening and analytical purposes. This dashboard presents aggregated screening data and is not a substitute for professional medical diagnosis.</p>
+      <p class="mb-0">© <span id="footerYear"></span> Swaasthya Hospitals × The Satsang Foundation. All screening data is de-identified before display.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="js/data-processing.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

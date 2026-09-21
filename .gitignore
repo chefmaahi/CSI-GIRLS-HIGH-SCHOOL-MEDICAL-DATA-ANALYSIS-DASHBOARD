@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# Raw medical data must NEVER be committed to a public repository.
+# The dashboard only reads from data/dashboard-data.json (aggregated/anonymised).
+# ---------------------------------------------------------------------------
+raw/
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.tsv
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

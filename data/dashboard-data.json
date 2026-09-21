@@ -1,0 +1,5737 @@
+{
+ "meta": {
+  "project_title": "School Health Monitoring Camp",
+  "camp_locations": [
+   "C.S.I. Girls High School, Madanapalle",
+   "A.A.M. Elementary School, Madanapalle"
+  ],
+  "organizations": [
+   "Swaasthya Hospitals",
+   "The Satsang Foundation"
+  ],
+  "records_in_raw_file": 112,
+  "duplicate_records_removed": 0,
+  "unique_students_analyzed": 112,
+  "screening_domains_reported": [
+   "BMI & growth",
+   "Vision",
+   "Dental",
+   "Nutrition",
+   "Illness"
+  ],
+  "min_group_size": 5,
+  "privacy_note": "This file contains only aggregated statistics. Groups and cells with fewer than 5 students are withheld. No names, UHIDs or individual-level rows are included."
+ },
+ "kpis": {
+  "total_students": 112,
+  "female_students": 94,
+  "male_students": 18,
+  "average_bmi": 16.4,
+  "normal_bmi_percent": 77.7,
+  "students_requiring_attention": 90,
+  "dental_findings": 76,
+  "vision_concerns": 10,
+  "vision_tested": 95,
+  "referrals_required": 8
+ },
+ "demographics": {
+  "gender_distribution": [
+   {
+    "gender": "Female",
+    "count": 94
+   },
+   {
+    "gender": "Male",
+    "count": 18
+   }
+  ],
+  "age_distribution": [
+   {
+    "group": "Up to 8",
+    "count": 24
+   },
+   {
+    "group": "9-11",
+    "count": 32
+   },
+   {
+    "group": "12-14",
+    "count": 41
+   },
+   {
+    "group": "15-17",
+    "count": 15
+   }
+  ]
+ },
+ "bmi": {
+  "average": 16.4,
+  "status_distribution": [
+   {
+    "status": "Normal",
+    "count": 87,
+    "percent": 77.7
+   },
+   {
+    "status": "Overweight",
+    "count": 16,
+    "percent": 14.3
+   },
+   {
+    "status": "Underweight",
+    "count": 9,
+    "percent": 8.0
+   }
+  ],
+  "histogram": [
+   {
+    "range": "10-14",
+    "count": 29
+   },
+   {
+    "range": "14-16",
+    "count": 27
+   },
+   {
+    "range": "16-18",
+    "count": 25
+   },
+   {
+    "range": "18-20",
+    "count": 16
+   },
+   {
+    "range": "20-22",
+    "count": 8
+   },
+   {
+    "range": "22-34",
+    "count": 7
+   }
+  ]
+ },
+ "vision": {
+  "tested_count": 95,
+  "normal_count": 85,
+  "concern_count": 10,
+  "right_eye_concern_count": 10,
+  "left_eye_concern_count": 8,
+  "not_tested_count": 17,
+  "color_vision_normal_count": 88,
+  "color_vision_unclear_count": 24,
+  "color_vision_concern_count": null,
+  "color_vision_note": "Colour vision (Ishihara): 88 students had a normal result. 24 students have an entry of \"No\", which is not an interpretable Ishihara result, so they are shown as unclear and not counted as concerns."
+ },
+ "hearing": {
+  "status": "not_reported",
+  "students_with_usable_result": null,
+  "note": "\"No\" entries mean not tested/unclear. Too few usable hearing results to report."
+ },
+ "dental": {
+  "students_with_any_finding": 76,
+  "percent_with_finding": 67.9,
+  "findings": [
+   {
+    "finding": "Dental caries",
+    "count": 28,
+    "percent": 25.0
+   },
+   {
+    "finding": "Pit & fissure caries",
+    "count": 22,
+    "percent": 19.6
+   },
+   {
+    "finding": "Fluorosis",
+    "count": 17,
+    "percent": 15.2
+   },
+   {
+    "finding": "Deep dental caries",
+    "count": 9,
+    "percent": 8.0
+   },
+   {
+    "finding": "Calculus",
+    "count": 9,
+    "percent": 8.0
+   },
+   {
+    "finding": "Grossly decayed",
+    "count": 7,
+    "percent": 6.2
+   },
+   {
+    "finding": "Over-retained tooth",
+    "count": 6,
+    "percent": 5.4
+   }
+  ]
+ },
+ "nutrition_general_health": {
+  "students_with_finding": 11,
+  "percent_with_finding": 9.8,
+  "findings": [
+   {
+    "finding": "Pale Skin (Anemia)",
+    "count": 11,
+    "percent": 9.8
+   }
+  ]
+ },
+ "illness": {
+  "acute": {
+   "students_affected": 12,
+   "percent": 10.7,
+   "conditions": [
+    {
+     "condition": "Cold",
+     "count": 10,
+     "percent": 8.9
+    }
+   ]
+  },
+  "chronic": {
+   "students_affected": 0,
+   "percent": 0.0,
+   "conditions": []
+  },
+  "receiving_regular_treatment": null
+ },
+ "physical_disability": {
+  "students_noted": null,
+  "percent": null,
+  "suppressed": true
+ },
+ "referrals": {
+  "count": 8,
+  "percent": 7.1,
+  "referral_field_recorded_for": 0,
+  "basis": "Referral Needed field = Yes, or clinician remark advising a specialist opinion/evaluation"
+ },
+ "mental_health": {
+  "screening_tool_administered": true,
+  "students_with_recorded_responses": 0,
+  "note": "Screening indicator - not a clinical diagnosis.",
+  "status": "no_responses_recorded",
+  "message": "The mental health screening questionnaire was included in the camp protocol, but no individual responses were captured in this dataset."
+ },
+ "key_findings": [
+  "77.7% of screened students (87 of 112) were classified as having a normal BMI.",
+  "90 students (80.4%) had at least one screening finding (BMI, vision, dental, nutrition, illness or referral).",
+  "Vision screening identified 10 of 95 tested students (10.5%) requiring further attention. 17 students had no distance-vision reading recorded.",
+  "Dental screening recorded findings in 76 students (67.9%).",
+  "8 students (7.1%) were advised a specialist opinion or referral in clinician remarks. The formal \"Referral Needed\" field was not filled in for any student.",
+  "Nutritional/general health screening recorded 11 students (9.8%) with a noted finding (most commonly: Pale Skin (Anemia)).",
+  "12 students (10.7%) reported an acute illness in the past month.",
+  "A small number of students were recorded with a physical disability finding; the exact count is withheld here to protect individual privacy."
+ ],
+ "priority_areas": [
+  {
+   "area": "Dental",
+   "icon": "tooth",
+   "count": 76,
+   "percent": 67.9
+  },
+  {
+   "area": "BMI (non-normal)",
+   "icon": "weight",
+   "count": 25,
+   "percent": 22.3
+  },
+  {
+   "area": "Acute Illness",
+   "icon": "thermometer",
+   "count": 12,
+   "percent": 10.7
+  },
+  {
+   "area": "Nutrition",
+   "icon": "apple",
+   "count": 11,
+   "percent": 9.8
+  },
+  {
+   "area": "Vision (of 95 tested)",
+   "icon": "eye",
+   "count": 10,
+   "percent": 10.5
+  },
+  {
+   "area": "Specialist opinion / referral advised",
+   "icon": "hospital",
+   "count": 8,
+   "percent": 7.1
+  }
+ ],
+ "summary_table": [
+  {
+   "indicator": "Normal BMI",
+   "students": 87,
+   "percent": 77.7,
+   "status": "Good"
+  },
+  {
+   "indicator": "Underweight",
+   "students": 9,
+   "percent": 8.0,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Overweight",
+   "students": 16,
+   "percent": 14.3,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Vision Concern (of tested)",
+   "students": 10,
+   "percent": 10.5,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Vision Not Tested",
+   "students": 17,
+   "percent": 15.2,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Dental Finding",
+   "students": 76,
+   "percent": 67.9,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Nutrition Finding",
+   "students": 11,
+   "percent": 9.8,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Acute Illness (past month)",
+   "students": 12,
+   "percent": 10.7,
+   "status": "Attention"
+  },
+  {
+   "indicator": "Specialist Opinion / Referral Advised",
+   "students": 8,
+   "percent": 7.1,
+   "status": "Attention"
+  }
+ ],
+ "filter_cube": {
+  "dimensions": [
+   "gender",
+   "age_group",
+   "bmi_status",
+   "referral",
+   "finding"
+  ],
+  "min_group_size": 5,
+  "combos": {
+   "all|all|all|all|all": {
+    "n": 112,
+    "gender_counts": {
+     "Female": 94,
+     "Male": 18
+    },
+    "age_counts": {
+     "Up to 8": 24,
+     "9-11": 32,
+     "12-14": 41,
+     "15-17": 15
+    },
+    "bmi_status_counts": {
+     "Normal": 87,
+     "Overweight": 16,
+     "Underweight": 9
+    },
+    "avg_bmi": 16.4,
+    "normal_bmi_pct": 77.7,
+    "vision_concern": 10,
+    "dental_finding": 76,
+    "nutrition_finding": 11,
+    "acute_illness": 12,
+    "referral": 8,
+    "requiring_attention": 90,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 29
+     },
+     {
+      "range": "14-16",
+      "count": 27
+     },
+     {
+      "range": "16-18",
+      "count": 25
+     },
+     {
+      "range": "18-20",
+      "count": 16
+     },
+     {
+      "range": "20-22",
+      "count": 8
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|all|all|vision_concern": {
+    "n": 10,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 90.0,
+    "vision_concern": 10,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-34",
+      "count": 10
+     }
+    ]
+   },
+   "all|all|all|all|dental_finding": {
+    "n": 76,
+    "gender_counts": {
+     "Female": 64,
+     "Male": 12
+    },
+    "age_counts": {
+     "Up to 8": 11,
+     "9-11": 24,
+     "12-14": 31,
+     "15-17": 10
+    },
+    "bmi_status_counts": {
+     "Normal": 57,
+     "Overweight": 11,
+     "Underweight": 8
+    },
+    "avg_bmi": 16.6,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": null,
+    "dental_finding": 76,
+    "nutrition_finding": 8,
+    "acute_illness": 7,
+    "referral": 5,
+    "requiring_attention": 76,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 20
+     },
+     {
+      "range": "14-16",
+      "count": 16
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-20",
+      "count": 14
+     },
+     {
+      "range": "20-34",
+      "count": 10
+     }
+    ]
+   },
+   "all|all|all|all|nutrition_finding": {
+    "n": 11,
+    "gender_counts": {
+     "Female": 11,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 17.2,
+    "normal_bmi_pct": 54.5,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": 11,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 11
+     }
+    ]
+   },
+   "all|all|all|all|acute_illness": {
+    "n": 12,
+    "gender_counts": {
+     "Female": 12,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 17.6,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": null,
+    "dental_finding": 7,
+    "nutrition_finding": null,
+    "acute_illness": 12,
+    "referral": null,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "12-18",
+      "count": 6
+     },
+     {
+      "range": "18-24",
+      "count": 6
+     }
+    ]
+   },
+   "all|all|all|yes|all": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 15.5,
+    "normal_bmi_pct": 87.5,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 8,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 8
+     }
+    ]
+   },
+   "all|all|all|yes|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 15.3,
+    "normal_bmi_pct": null,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 5,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 5
+     }
+    ]
+   },
+   "all|all|all|no|all": {
+    "n": 104,
+    "gender_counts": {
+     "Female": 86,
+     "Male": 18
+    },
+    "age_counts": {
+     "Up to 8": 23,
+     "9-11": 28,
+     "12-14": 39,
+     "15-17": 14
+    },
+    "bmi_status_counts": {
+     "Normal": 80,
+     "Overweight": 16,
+     "Underweight": 8
+    },
+    "avg_bmi": 16.5,
+    "normal_bmi_pct": 76.9,
+    "vision_concern": 8,
+    "dental_finding": 71,
+    "nutrition_finding": 9,
+    "acute_illness": 9,
+    "referral": 0,
+    "requiring_attention": 82,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 27
+     },
+     {
+      "range": "14-16",
+      "count": 24
+     },
+     {
+      "range": "16-18",
+      "count": 24
+     },
+     {
+      "range": "18-20",
+      "count": 14
+     },
+     {
+      "range": "20-22",
+      "count": 8
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|all|no|vision_concern": {
+    "n": 8,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.8,
+    "normal_bmi_pct": 87.5,
+    "vision_concern": 8,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "14-34",
+      "count": 8
+     }
+    ]
+   },
+   "all|all|all|no|dental_finding": {
+    "n": 71,
+    "gender_counts": {
+     "Female": 59,
+     "Male": 12
+    },
+    "age_counts": {
+     "Up to 8": 10,
+     "9-11": 21,
+     "12-14": 30,
+     "15-17": 10
+    },
+    "bmi_status_counts": {
+     "Normal": 53,
+     "Overweight": 11,
+     "Underweight": 7
+    },
+    "avg_bmi": 16.7,
+    "normal_bmi_pct": 74.6,
+    "vision_concern": null,
+    "dental_finding": 71,
+    "nutrition_finding": 7,
+    "acute_illness": 6,
+    "referral": 0,
+    "requiring_attention": 71,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 18
+     },
+     {
+      "range": "14-16",
+      "count": 15
+     },
+     {
+      "range": "16-18",
+      "count": 15
+     },
+     {
+      "range": "18-20",
+      "count": 13
+     },
+     {
+      "range": "20-34",
+      "count": 10
+     }
+    ]
+   },
+   "all|all|all|no|nutrition_finding": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.0,
+    "normal_bmi_pct": 55.6,
+    "vision_concern": null,
+    "dental_finding": 7,
+    "nutrition_finding": 9,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 9
+     }
+    ]
+   },
+   "all|all|all|no|acute_illness": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 77.8,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": 9,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-24",
+      "count": 9
+     }
+    ]
+   },
+   "all|all|Normal|all|all": {
+    "n": 87,
+    "gender_counts": {
+     "Female": 72,
+     "Male": 15
+    },
+    "age_counts": {
+     "Up to 8": 18,
+     "9-11": 24,
+     "12-14": 32,
+     "15-17": 13
+    },
+    "bmi_status_counts": {
+     "Normal": 87,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 9,
+    "dental_finding": 57,
+    "nutrition_finding": 6,
+    "acute_illness": 9,
+    "referral": 7,
+    "requiring_attention": 65,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 20
+     },
+     {
+      "range": "14-16",
+      "count": 27
+     },
+     {
+      "range": "16-18",
+      "count": 24
+     },
+     {
+      "range": "18-22",
+      "count": 16
+     }
+    ]
+   },
+   "all|all|Normal|all|vision_concern": {
+    "n": 9,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 9,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 9,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 9
+     }
+    ]
+   },
+   "all|all|Normal|all|dental_finding": {
+    "n": 57,
+    "gender_counts": {
+     "Female": 48,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 7,
+     "9-11": 18,
+     "12-14": 24,
+     "15-17": 8
+    },
+    "bmi_status_counts": {
+     "Normal": 57,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 57,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": null,
+    "requiring_attention": 57,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 12
+     },
+     {
+      "range": "14-16",
+      "count": 16
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-22",
+      "count": 13
+     }
+    ]
+   },
+   "all|all|Normal|all|nutrition_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 6,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.3,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 6,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 6
+     }
+    ]
+   },
+   "all|all|Normal|all|acute_illness": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 9,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.1,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 9,
+    "referral": null,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 9
+     }
+    ]
+   },
+   "all|all|Normal|yes|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 7,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|Normal|no|all": {
+    "n": 80,
+    "gender_counts": {
+     "Female": 65,
+     "Male": 15
+    },
+    "age_counts": {
+     "Up to 8": 17,
+     "9-11": 21,
+     "12-14": 30,
+     "15-17": 12
+    },
+    "bmi_status_counts": {
+     "Normal": 80,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 7,
+    "dental_finding": 53,
+    "nutrition_finding": 5,
+    "acute_illness": 7,
+    "referral": 0,
+    "requiring_attention": 58,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 19
+     },
+     {
+      "range": "14-16",
+      "count": 24
+     },
+     {
+      "range": "16-18",
+      "count": 23
+     },
+     {
+      "range": "18-22",
+      "count": 14
+     }
+    ]
+   },
+   "all|all|Normal|no|vision_concern": {
+    "n": 7,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 7,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|Normal|no|dental_finding": {
+    "n": 53,
+    "gender_counts": {
+     "Female": 44,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 6,
+     "9-11": 16,
+     "12-14": 23,
+     "15-17": 8
+    },
+    "bmi_status_counts": {
+     "Normal": 53,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 53,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 53,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 11
+     },
+     {
+      "range": "14-16",
+      "count": 15
+     },
+     {
+      "range": "16-18",
+      "count": 15
+     },
+     {
+      "range": "18-22",
+      "count": 12
+     }
+    ]
+   },
+   "all|all|Normal|no|nutrition_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 5,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.6,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 5,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 5
+     }
+    ]
+   },
+   "all|all|Normal|no|acute_illness": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.3,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 7,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|Overweight|all|all": {
+    "n": 16,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 16,
+     "Underweight": 0
+    },
+    "avg_bmi": 22.5,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 11,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 16,
+    "bmi_histogram": [
+     {
+      "range": "16-22",
+      "count": 9
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|Overweight|all|dental_finding": {
+    "n": 11,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 11,
+     "Underweight": 0
+    },
+    "avg_bmi": 23.1,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 11,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "18-22",
+      "count": 5
+     },
+     {
+      "range": "22-34",
+      "count": 6
+     }
+    ]
+   },
+   "all|all|Overweight|no|all": {
+    "n": 16,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 16,
+     "Underweight": 0
+    },
+    "avg_bmi": 22.5,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 11,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 16,
+    "bmi_histogram": [
+     {
+      "range": "16-22",
+      "count": 9
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "all|all|Overweight|no|dental_finding": {
+    "n": 11,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 11,
+     "Underweight": 0
+    },
+    "avg_bmi": 23.1,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 11,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "18-22",
+      "count": 5
+     },
+     {
+      "range": "22-34",
+      "count": 6
+     }
+    ]
+   },
+   "all|all|Underweight|all|all": {
+    "n": 9,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 9
+    },
+    "avg_bmi": 12.3,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 9
+     }
+    ]
+   },
+   "all|all|Underweight|all|dental_finding": {
+    "n": 8,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 8
+    },
+    "avg_bmi": 12.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 8
+     }
+    ]
+   },
+   "all|all|Underweight|no|all": {
+    "n": 8,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 8
+    },
+    "avg_bmi": 12.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 7,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 8
+     }
+    ]
+   },
+   "all|all|Underweight|no|dental_finding": {
+    "n": 7,
+    "gender_counts": null,
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 7
+    },
+    "avg_bmi": 12.1,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 7,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 7
+     }
+    ]
+   },
+   "all|Up to 8|all|all|all": {
+    "n": 24,
+    "gender_counts": {
+     "Female": 15,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 24,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.8,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": 0,
+    "dental_finding": 11,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": 13,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 14
+     },
+     {
+      "range": "14-22",
+      "count": 10
+     }
+    ]
+   },
+   "all|Up to 8|all|all|dental_finding": {
+    "n": 11,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 11,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 12.8,
+    "normal_bmi_pct": 63.6,
+    "vision_concern": 0,
+    "dental_finding": 11,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 11
+     }
+    ]
+   },
+   "all|Up to 8|all|no|all": {
+    "n": 23,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 23,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.8,
+    "normal_bmi_pct": 73.9,
+    "vision_concern": 0,
+    "dental_finding": 10,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 13
+     },
+     {
+      "range": "14-22",
+      "count": 10
+     }
+    ]
+   },
+   "all|Up to 8|all|no|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 10,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 12.7,
+    "normal_bmi_pct": 60.0,
+    "vision_concern": 0,
+    "dental_finding": 10,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 10
+     }
+    ]
+   },
+   "all|Up to 8|Normal|all|all": {
+    "n": 18,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 8
+    },
+    "age_counts": {
+     "Up to 8": 18,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 18,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 7,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 10
+     },
+     {
+      "range": "14-16",
+      "count": 8
+     }
+    ]
+   },
+   "all|Up to 8|Normal|all|dental_finding": {
+    "n": 7,
+    "gender_counts": null,
+    "age_counts": {
+     "Up to 8": 7,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.5,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 7,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 7
+     }
+    ]
+   },
+   "all|Up to 8|Normal|no|all": {
+    "n": 17,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 8
+    },
+    "age_counts": {
+     "Up to 8": 17,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 17,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 6,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 9
+     },
+     {
+      "range": "14-16",
+      "count": 8
+     }
+    ]
+   },
+   "all|Up to 8|Normal|no|dental_finding": {
+    "n": 6,
+    "gender_counts": null,
+    "age_counts": {
+     "Up to 8": 6,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 6,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.5,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 6,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     }
+    ]
+   },
+   "all|9-11|all|all|all": {
+    "n": 32,
+    "gender_counts": {
+     "Female": 23,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 32,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.5,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": null,
+    "dental_finding": 24,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 29,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 12
+     },
+     {
+      "range": "14-16",
+      "count": 10
+     },
+     {
+      "range": "16-24",
+      "count": 10
+     }
+    ]
+   },
+   "all|9-11|all|all|dental_finding": {
+    "n": 24,
+    "gender_counts": {
+     "Female": 17,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 24,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.2,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": 0,
+    "dental_finding": 24,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 24,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 11
+     },
+     {
+      "range": "14-16",
+      "count": 6
+     },
+     {
+      "range": "16-24",
+      "count": 7
+     }
+    ]
+   },
+   "all|9-11|all|no|all": {
+    "n": 28,
+    "gender_counts": {
+     "Female": 19,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 28,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.6,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": null,
+    "dental_finding": 21,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 25,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 11
+     },
+     {
+      "range": "14-16",
+      "count": 8
+     },
+     {
+      "range": "16-24",
+      "count": 9
+     }
+    ]
+   },
+   "all|9-11|all|no|dental_finding": {
+    "n": 21,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 21,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.2,
+    "normal_bmi_pct": 76.2,
+    "vision_concern": 0,
+    "dental_finding": 21,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 21,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 10
+     },
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-24",
+      "count": 6
+     }
+    ]
+   },
+   "all|9-11|Normal|all|all": {
+    "n": 24,
+    "gender_counts": {
+     "Female": 17,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 24,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 24,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 18,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 21,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 9
+     },
+     {
+      "range": "14-16",
+      "count": 10
+     },
+     {
+      "range": "16-20",
+      "count": 5
+     }
+    ]
+   },
+   "all|9-11|Normal|all|dental_finding": {
+    "n": 18,
+    "gender_counts": {
+     "Female": 13,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 18,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 18,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 18,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 18,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 8
+     },
+     {
+      "range": "14-20",
+      "count": 10
+     }
+    ]
+   },
+   "all|9-11|Normal|no|all": {
+    "n": 21,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 21,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 21,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 16,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 18,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 9
+     },
+     {
+      "range": "14-20",
+      "count": 12
+     }
+    ]
+   },
+   "all|9-11|Normal|no|dental_finding": {
+    "n": 16,
+    "gender_counts": {
+     "Female": 11,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 16,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 16,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 16,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 16,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 8
+     },
+     {
+      "range": "14-20",
+      "count": 8
+     }
+    ]
+   },
+   "all|9-11|Overweight|all|all": {
+    "n": 5,
+    "gender_counts": null,
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 5,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 5,
+     "Underweight": 0
+    },
+    "avg_bmi": 21.0,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": null,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "18-24",
+      "count": 5
+     }
+    ]
+   },
+   "all|9-11|Overweight|no|all": {
+    "n": 5,
+    "gender_counts": null,
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 5,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 5,
+     "Underweight": 0
+    },
+    "avg_bmi": 21.0,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": null,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "18-24",
+      "count": 5
+     }
+    ]
+   },
+   "all|12-14|all|all|all": {
+    "n": 41,
+    "gender_counts": {
+     "Female": 41,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 41,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.0,
+    "normal_bmi_pct": 78.0,
+    "vision_concern": null,
+    "dental_finding": 31,
+    "nutrition_finding": 6,
+    "acute_illness": 7,
+    "referral": null,
+    "requiring_attention": 36,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 9
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-20",
+      "count": 8
+     },
+     {
+      "range": "20-34",
+      "count": 8
+     }
+    ]
+   },
+   "all|12-14|all|all|dental_finding": {
+    "n": 31,
+    "gender_counts": {
+     "Female": 31,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 31,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 77.4,
+    "vision_concern": null,
+    "dental_finding": 31,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": null,
+    "requiring_attention": 31,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 8
+     },
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|all|all|nutrition_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": null,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 6,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|all|all|acute_illness": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 7,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.4,
+    "normal_bmi_pct": 85.7,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 7,
+    "referral": null,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "14-24",
+      "count": 7
+     }
+    ]
+   },
+   "all|12-14|all|no|all": {
+    "n": 39,
+    "gender_counts": {
+     "Female": 39,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 39,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.1,
+    "normal_bmi_pct": 76.9,
+    "vision_concern": null,
+    "dental_finding": 30,
+    "nutrition_finding": 6,
+    "acute_illness": 6,
+    "referral": 0,
+    "requiring_attention": 34,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 8
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-20",
+      "count": 7
+     },
+     {
+      "range": "20-34",
+      "count": 8
+     }
+    ]
+   },
+   "all|12-14|all|no|dental_finding": {
+    "n": 30,
+    "gender_counts": {
+     "Female": 30,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 30,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 76.7,
+    "vision_concern": null,
+    "dental_finding": 30,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 30,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 7
+     },
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|all|no|nutrition_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": null,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 6,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|all|no|acute_illness": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": 83.3,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 6,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-24",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|Normal|all|all": {
+    "n": 32,
+    "gender_counts": {
+     "Female": 32,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 32,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 32,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 24,
+    "nutrition_finding": null,
+    "acute_illness": 6,
+    "referral": null,
+    "requiring_attention": 27,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 7
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-22",
+      "count": 9
+     }
+    ]
+   },
+   "all|12-14|Normal|all|dental_finding": {
+    "n": 24,
+    "gender_counts": {
+     "Female": 24,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 24,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 24,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 24,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 24,
+    "bmi_histogram": [
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 8
+     }
+    ]
+   },
+   "all|12-14|Normal|all|acute_illness": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 6,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.5,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": 6,
+    "referral": null,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|Normal|no|all": {
+    "n": 30,
+    "gender_counts": {
+     "Female": 30,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 30,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 30,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 23,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 25,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-22",
+      "count": 8
+     }
+    ]
+   },
+   "all|12-14|Normal|no|dental_finding": {
+    "n": 23,
+    "gender_counts": {
+     "Female": 23,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 23,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 23,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 23,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 23,
+    "bmi_histogram": [
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 7
+     }
+    ]
+   },
+   "all|12-14|Normal|no|acute_illness": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 5,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 5,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 5
+     }
+    ]
+   },
+   "all|12-14|Overweight|all|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 7,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 7,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.0,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 7
+     }
+    ]
+   },
+   "all|12-14|Overweight|all|dental_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 6,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "all|12-14|Overweight|no|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 7,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 7,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.0,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 7
+     }
+    ]
+   },
+   "all|12-14|Overweight|no|dental_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 6,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "all|15-17|all|all|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 15,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 15
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.0,
+    "normal_bmi_pct": 86.7,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 8
+     }
+    ]
+   },
+   "all|15-17|all|all|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 10
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.3,
+    "normal_bmi_pct": 80.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 10
+     }
+    ]
+   },
+   "all|15-17|all|no|all": {
+    "n": 14,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 14
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": 85.7,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 7
+     }
+    ]
+   },
+   "all|15-17|all|no|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 10
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.3,
+    "normal_bmi_pct": 80.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 10
+     }
+    ]
+   },
+   "all|15-17|Normal|all|all": {
+    "n": 13,
+    "gender_counts": {
+     "Female": 13,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 13
+    },
+    "bmi_status_counts": {
+     "Normal": 13,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.5,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 6
+     }
+    ]
+   },
+   "all|15-17|Normal|all|dental_finding": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 8
+    },
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.6,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 8
+     }
+    ]
+   },
+   "all|15-17|Normal|no|all": {
+    "n": 12,
+    "gender_counts": {
+     "Female": 12,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 12
+    },
+    "bmi_status_counts": {
+     "Normal": 12,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.4,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 5
+     }
+    ]
+   },
+   "all|15-17|Normal|no|dental_finding": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 8
+    },
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.6,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 8
+     }
+    ]
+   },
+   "Female|all|all|all|all": {
+    "n": 94,
+    "gender_counts": {
+     "Female": 94,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 15,
+     "9-11": 23,
+     "12-14": 41,
+     "15-17": 15
+    },
+    "bmi_status_counts": {
+     "Normal": 72,
+     "Overweight": 15,
+     "Underweight": 7
+    },
+    "avg_bmi": 16.9,
+    "normal_bmi_pct": 76.6,
+    "vision_concern": 9,
+    "dental_finding": 64,
+    "nutrition_finding": 11,
+    "acute_illness": 12,
+    "referral": 8,
+    "requiring_attention": 77,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 19
+     },
+     {
+      "range": "14-16",
+      "count": 20
+     },
+     {
+      "range": "16-18",
+      "count": 25
+     },
+     {
+      "range": "18-20",
+      "count": 15
+     },
+     {
+      "range": "20-22",
+      "count": 8
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|all|all|vision_concern": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.9,
+    "normal_bmi_pct": 88.9,
+    "vision_concern": 9,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-34",
+      "count": 9
+     }
+    ]
+   },
+   "Female|all|all|all|dental_finding": {
+    "n": 64,
+    "gender_counts": {
+     "Female": 64,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 6,
+     "9-11": 17,
+     "12-14": 31,
+     "15-17": 10
+    },
+    "bmi_status_counts": {
+     "Normal": 48,
+     "Overweight": 10,
+     "Underweight": 6
+    },
+    "avg_bmi": 17.1,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": null,
+    "dental_finding": 64,
+    "nutrition_finding": 8,
+    "acute_illness": 7,
+    "referral": 5,
+    "requiring_attention": 64,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 12
+     },
+     {
+      "range": "14-16",
+      "count": 13
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-20",
+      "count": 13
+     },
+     {
+      "range": "20-34",
+      "count": 10
+     }
+    ]
+   },
+   "Female|all|all|all|nutrition_finding": {
+    "n": 11,
+    "gender_counts": {
+     "Female": 11,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 17.2,
+    "normal_bmi_pct": 54.5,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": 11,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 11
+     }
+    ]
+   },
+   "Female|all|all|all|acute_illness": {
+    "n": 12,
+    "gender_counts": {
+     "Female": 12,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 17.6,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": null,
+    "dental_finding": 7,
+    "nutrition_finding": null,
+    "acute_illness": 12,
+    "referral": null,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "12-18",
+      "count": 6
+     },
+     {
+      "range": "18-24",
+      "count": 6
+     }
+    ]
+   },
+   "Female|all|all|yes|all": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 15.5,
+    "normal_bmi_pct": 87.5,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 8,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 8
+     }
+    ]
+   },
+   "Female|all|all|yes|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 15.3,
+    "normal_bmi_pct": null,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 5,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 5
+     }
+    ]
+   },
+   "Female|all|all|no|all": {
+    "n": 86,
+    "gender_counts": {
+     "Female": 86,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 14,
+     "9-11": 19,
+     "12-14": 39,
+     "15-17": 14
+    },
+    "bmi_status_counts": {
+     "Normal": 65,
+     "Overweight": 15,
+     "Underweight": 6
+    },
+    "avg_bmi": 17.0,
+    "normal_bmi_pct": 75.6,
+    "vision_concern": 7,
+    "dental_finding": 59,
+    "nutrition_finding": 9,
+    "acute_illness": 9,
+    "referral": 0,
+    "requiring_attention": 69,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 17
+     },
+     {
+      "range": "14-16",
+      "count": 17
+     },
+     {
+      "range": "16-18",
+      "count": 24
+     },
+     {
+      "range": "18-20",
+      "count": 13
+     },
+     {
+      "range": "20-22",
+      "count": 8
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|all|no|vision_concern": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 19.5,
+    "normal_bmi_pct": 85.7,
+    "vision_concern": 7,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "14-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|all|no|dental_finding": {
+    "n": 59,
+    "gender_counts": {
+     "Female": 59,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 5,
+     "9-11": 14,
+     "12-14": 30,
+     "15-17": 10
+    },
+    "bmi_status_counts": {
+     "Normal": 44,
+     "Overweight": 10,
+     "Underweight": 5
+    },
+    "avg_bmi": 17.2,
+    "normal_bmi_pct": 74.6,
+    "vision_concern": null,
+    "dental_finding": 59,
+    "nutrition_finding": 7,
+    "acute_illness": 6,
+    "referral": 0,
+    "requiring_attention": 59,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 10
+     },
+     {
+      "range": "14-16",
+      "count": 12
+     },
+     {
+      "range": "16-18",
+      "count": 15
+     },
+     {
+      "range": "18-20",
+      "count": 12
+     },
+     {
+      "range": "20-34",
+      "count": 10
+     }
+    ]
+   },
+   "Female|all|all|no|nutrition_finding": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.0,
+    "normal_bmi_pct": 55.6,
+    "vision_concern": null,
+    "dental_finding": 7,
+    "nutrition_finding": 9,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 9
+     }
+    ]
+   },
+   "Female|all|all|no|acute_illness": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 77.8,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": 9,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-24",
+      "count": 9
+     }
+    ]
+   },
+   "Female|all|Normal|all|all": {
+    "n": 72,
+    "gender_counts": {
+     "Female": 72,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 10,
+     "9-11": 17,
+     "12-14": 32,
+     "15-17": 13
+    },
+    "bmi_status_counts": {
+     "Normal": 72,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.1,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 8,
+    "dental_finding": 48,
+    "nutrition_finding": 6,
+    "acute_illness": 9,
+    "referral": 7,
+    "requiring_attention": 55,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 12
+     },
+     {
+      "range": "14-16",
+      "count": 20
+     },
+     {
+      "range": "16-18",
+      "count": 24
+     },
+     {
+      "range": "18-22",
+      "count": 16
+     }
+    ]
+   },
+   "Female|all|Normal|all|vision_concern": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 8,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 8
+     }
+    ]
+   },
+   "Female|all|Normal|all|dental_finding": {
+    "n": 48,
+    "gender_counts": {
+     "Female": 48,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 48,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.3,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 48,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": null,
+    "requiring_attention": 48,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 6
+     },
+     {
+      "range": "14-16",
+      "count": 13
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-22",
+      "count": 13
+     }
+    ]
+   },
+   "Female|all|Normal|all|nutrition_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 6,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.3,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 6,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 6
+     }
+    ]
+   },
+   "Female|all|Normal|all|acute_illness": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 9,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.1,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 9,
+    "referral": null,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 9
+     }
+    ]
+   },
+   "Female|all|Normal|yes|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 7,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|Normal|no|all": {
+    "n": 65,
+    "gender_counts": {
+     "Female": 65,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 9,
+     "9-11": 14,
+     "12-14": 30,
+     "15-17": 12
+    },
+    "bmi_status_counts": {
+     "Normal": 65,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.1,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 6,
+    "dental_finding": 44,
+    "nutrition_finding": 5,
+    "acute_illness": 7,
+    "referral": 0,
+    "requiring_attention": 48,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 11
+     },
+     {
+      "range": "14-16",
+      "count": 17
+     },
+     {
+      "range": "16-18",
+      "count": 23
+     },
+     {
+      "range": "18-22",
+      "count": 14
+     }
+    ]
+   },
+   "Female|all|Normal|no|vision_concern": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 6,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.1,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 6,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 6
+     }
+    ]
+   },
+   "Female|all|Normal|no|dental_finding": {
+    "n": 44,
+    "gender_counts": {
+     "Female": 44,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 44,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.4,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 44,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 44,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 5
+     },
+     {
+      "range": "14-16",
+      "count": 12
+     },
+     {
+      "range": "16-18",
+      "count": 15
+     },
+     {
+      "range": "18-22",
+      "count": 12
+     }
+    ]
+   },
+   "Female|all|Normal|no|nutrition_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 5,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.6,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 5,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 5
+     }
+    ]
+   },
+   "Female|all|Normal|no|acute_illness": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.3,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 7,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|Overweight|all|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 15,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 15,
+     "Underweight": 0
+    },
+    "avg_bmi": 22.7,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 15,
+    "bmi_histogram": [
+     {
+      "range": "16-22",
+      "count": 8
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|Overweight|all|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 10,
+     "Underweight": 0
+    },
+    "avg_bmi": 23.5,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "18-34",
+      "count": 10
+     }
+    ]
+   },
+   "Female|all|Overweight|no|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 15,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 15,
+     "Underweight": 0
+    },
+    "avg_bmi": 22.7,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 15,
+    "bmi_histogram": [
+     {
+      "range": "16-22",
+      "count": 8
+     },
+     {
+      "range": "22-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|Overweight|no|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 10,
+     "Underweight": 0
+    },
+    "avg_bmi": 23.5,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "18-34",
+      "count": 10
+     }
+    ]
+   },
+   "Female|all|Underweight|all|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 7
+    },
+    "avg_bmi": 12.4,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 7
+     }
+    ]
+   },
+   "Female|all|Underweight|all|dental_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 6
+    },
+    "avg_bmi": 12.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 6
+     }
+    ]
+   },
+   "Female|all|Underweight|no|all": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 6
+    },
+    "avg_bmi": 12.3,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 6
+     }
+    ]
+   },
+   "Female|all|Underweight|no|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 0,
+     "Underweight": 5
+    },
+    "avg_bmi": 12.1,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 5
+     }
+    ]
+   },
+   "Female|Up to 8|all|all|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 15,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 15,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 66.7,
+    "vision_concern": 0,
+    "dental_finding": 6,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 9
+     },
+     {
+      "range": "14-22",
+      "count": 6
+     }
+    ]
+   },
+   "Female|Up to 8|all|all|dental_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 6,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 12.5,
+    "normal_bmi_pct": null,
+    "vision_concern": 0,
+    "dental_finding": 6,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 6
+     }
+    ]
+   },
+   "Female|Up to 8|all|no|all": {
+    "n": 14,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 14,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.1,
+    "normal_bmi_pct": 64.3,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 8
+     },
+     {
+      "range": "14-22",
+      "count": 6
+     }
+    ]
+   },
+   "Female|Up to 8|all|no|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 5,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 12.3,
+    "normal_bmi_pct": null,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 5
+     }
+    ]
+   },
+   "Female|Up to 8|Normal|all|all": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 10,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 10,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": null,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": null,
+    "requiring_attention": null,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 10
+     }
+    ]
+   },
+   "Female|Up to 8|Normal|no|all": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 9,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 9,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 9,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": null,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": null,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 9
+     }
+    ]
+   },
+   "Female|9-11|all|all|all": {
+    "n": 23,
+    "gender_counts": {
+     "Female": 23,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 23,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.9,
+    "normal_bmi_pct": 73.9,
+    "vision_concern": null,
+    "dental_finding": 17,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 21,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 7
+     },
+     {
+      "range": "14-16",
+      "count": 7
+     },
+     {
+      "range": "16-24",
+      "count": 9
+     }
+    ]
+   },
+   "Female|9-11|all|all|dental_finding": {
+    "n": 17,
+    "gender_counts": {
+     "Female": 17,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 17,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.5,
+    "normal_bmi_pct": 76.5,
+    "vision_concern": 0,
+    "dental_finding": 17,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 17,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 6
+     },
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-24",
+      "count": 6
+     }
+    ]
+   },
+   "Female|9-11|all|no|all": {
+    "n": 19,
+    "gender_counts": {
+     "Female": 19,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 19,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 16.1,
+    "normal_bmi_pct": 73.7,
+    "vision_concern": null,
+    "dental_finding": 14,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 17,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 6
+     },
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-24",
+      "count": 8
+     }
+    ]
+   },
+   "Female|9-11|all|no|dental_finding": {
+    "n": 14,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 14,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 15.6,
+    "normal_bmi_pct": 78.6,
+    "vision_concern": 0,
+    "dental_finding": 14,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 14,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 5
+     },
+     {
+      "range": "14-24",
+      "count": 9
+     }
+    ]
+   },
+   "Female|9-11|Normal|all|all": {
+    "n": 17,
+    "gender_counts": {
+     "Female": 17,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 17,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 17,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 13,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 15,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 5
+     },
+     {
+      "range": "14-16",
+      "count": 7
+     },
+     {
+      "range": "16-20",
+      "count": 5
+     }
+    ]
+   },
+   "Female|9-11|Normal|all|dental_finding": {
+    "n": 13,
+    "gender_counts": {
+     "Female": 13,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 13,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 13,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.1,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 13,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 13,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 13
+     }
+    ]
+   },
+   "Female|9-11|Normal|no|all": {
+    "n": 14,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 14,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 14,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 11,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 5
+     },
+     {
+      "range": "14-20",
+      "count": 9
+     }
+    ]
+   },
+   "Female|9-11|Normal|no|dental_finding": {
+    "n": 11,
+    "gender_counts": {
+     "Female": 11,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 11,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 11,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 15.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 11,
+    "nutrition_finding": 0,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 11
+     }
+    ]
+   },
+   "Female|12-14|all|all|all": {
+    "n": 41,
+    "gender_counts": {
+     "Female": 41,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 41,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.0,
+    "normal_bmi_pct": 78.0,
+    "vision_concern": null,
+    "dental_finding": 31,
+    "nutrition_finding": 6,
+    "acute_illness": 7,
+    "referral": null,
+    "requiring_attention": 36,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 9
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-20",
+      "count": 8
+     },
+     {
+      "range": "20-34",
+      "count": 8
+     }
+    ]
+   },
+   "Female|12-14|all|all|dental_finding": {
+    "n": 31,
+    "gender_counts": {
+     "Female": 31,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 31,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 77.4,
+    "vision_concern": null,
+    "dental_finding": 31,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": null,
+    "requiring_attention": 31,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 8
+     },
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|all|all|nutrition_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": null,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 6,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|all|all|acute_illness": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 7,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.4,
+    "normal_bmi_pct": 85.7,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 7,
+    "referral": null,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "14-24",
+      "count": 7
+     }
+    ]
+   },
+   "Female|12-14|all|no|all": {
+    "n": 39,
+    "gender_counts": {
+     "Female": 39,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 39,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.1,
+    "normal_bmi_pct": 76.9,
+    "vision_concern": null,
+    "dental_finding": 30,
+    "nutrition_finding": 6,
+    "acute_illness": 6,
+    "referral": 0,
+    "requiring_attention": 34,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 8
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-20",
+      "count": 7
+     },
+     {
+      "range": "20-34",
+      "count": 8
+     }
+    ]
+   },
+   "Female|12-14|all|no|dental_finding": {
+    "n": 30,
+    "gender_counts": {
+     "Female": 30,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 30,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.4,
+    "normal_bmi_pct": 76.7,
+    "vision_concern": null,
+    "dental_finding": 30,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 30,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 7
+     },
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|all|no|nutrition_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": null,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": 6,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-26",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|all|no|acute_illness": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": 83.3,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": null,
+    "acute_illness": 6,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-24",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|Normal|all|all": {
+    "n": 32,
+    "gender_counts": {
+     "Female": 32,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 32,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 32,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 24,
+    "nutrition_finding": null,
+    "acute_illness": 6,
+    "referral": null,
+    "requiring_attention": 27,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 7
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-22",
+      "count": 9
+     }
+    ]
+   },
+   "Female|12-14|Normal|all|dental_finding": {
+    "n": 24,
+    "gender_counts": {
+     "Female": 24,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 24,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 24,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 24,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 24,
+    "bmi_histogram": [
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 8
+     }
+    ]
+   },
+   "Female|12-14|Normal|all|acute_illness": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 6,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.5,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": 6,
+    "referral": null,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|Normal|no|all": {
+    "n": 30,
+    "gender_counts": {
+     "Female": 30,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 30,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 30,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 23,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 25,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 6
+     },
+     {
+      "range": "16-18",
+      "count": 16
+     },
+     {
+      "range": "18-22",
+      "count": 8
+     }
+    ]
+   },
+   "Female|12-14|Normal|no|dental_finding": {
+    "n": 23,
+    "gender_counts": {
+     "Female": 23,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 23,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 23,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 23,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 23,
+    "bmi_histogram": [
+     {
+      "range": "14-16",
+      "count": 5
+     },
+     {
+      "range": "16-18",
+      "count": 11
+     },
+     {
+      "range": "18-20",
+      "count": 7
+     }
+    ]
+   },
+   "Female|12-14|Normal|no|acute_illness": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 5,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 5,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 5,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 16.9,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": null,
+    "nutrition_finding": null,
+    "acute_illness": 5,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "14-20",
+      "count": 5
+     }
+    ]
+   },
+   "Female|12-14|Overweight|all|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 7,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 7,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.0,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|12-14|Overweight|all|dental_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 6,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "Female|12-14|Overweight|no|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 7,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 7,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 7,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.0,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 7
+     }
+    ]
+   },
+   "Female|12-14|Overweight|no|dental_finding": {
+    "n": 6,
+    "gender_counts": {
+     "Female": 6,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 6,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 0,
+     "Overweight": 6,
+     "Underweight": 0
+    },
+    "avg_bmi": 25.2,
+    "normal_bmi_pct": 0.0,
+    "vision_concern": null,
+    "dental_finding": 6,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "20-34",
+      "count": 6
+     }
+    ]
+   },
+   "Female|15-17|all|all|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 15,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 15
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.0,
+    "normal_bmi_pct": 86.7,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 8
+     }
+    ]
+   },
+   "Female|15-17|all|all|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 10
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.3,
+    "normal_bmi_pct": 80.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 10
+     }
+    ]
+   },
+   "Female|15-17|all|no|all": {
+    "n": 14,
+    "gender_counts": {
+     "Female": 14,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 14
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 17.9,
+    "normal_bmi_pct": 85.7,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 11,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 7
+     }
+    ]
+   },
+   "Female|15-17|all|no|dental_finding": {
+    "n": 10,
+    "gender_counts": {
+     "Female": 10,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 10
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 18.3,
+    "normal_bmi_pct": 80.0,
+    "vision_concern": null,
+    "dental_finding": 10,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 10
+     }
+    ]
+   },
+   "Female|15-17|Normal|all|all": {
+    "n": 13,
+    "gender_counts": {
+     "Female": 13,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 13
+    },
+    "bmi_status_counts": {
+     "Normal": 13,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.5,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": null,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 6
+     }
+    ]
+   },
+   "Female|15-17|Normal|all|dental_finding": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 8
+    },
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.6,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 8
+     }
+    ]
+   },
+   "Female|15-17|Normal|no|all": {
+    "n": 12,
+    "gender_counts": {
+     "Female": 12,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 12
+    },
+    "bmi_status_counts": {
+     "Normal": 12,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.4,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": null,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "14-18",
+      "count": 7
+     },
+     {
+      "range": "18-22",
+      "count": 5
+     }
+    ]
+   },
+   "Female|15-17|Normal|no|dental_finding": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 8,
+     "Male": 0
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 8
+    },
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 17.6,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 8,
+    "nutrition_finding": null,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "14-22",
+      "count": 8
+     }
+    ]
+   },
+   "Male|all|all|all|all": {
+    "n": 18,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 18
+    },
+    "age_counts": {
+     "Up to 8": 9,
+     "9-11": 9,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 83.3,
+    "vision_concern": null,
+    "dental_finding": 12,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 13,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 10
+     },
+     {
+      "range": "14-20",
+      "count": 8
+     }
+    ]
+   },
+   "Male|all|all|all|dental_finding": {
+    "n": 12,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 12
+    },
+    "age_counts": {
+     "Up to 8": 5,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.9,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": 0,
+    "dental_finding": 12,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "10-20",
+      "count": 12
+     }
+    ]
+   },
+   "Male|all|all|no|all": {
+    "n": 18,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 18
+    },
+    "age_counts": {
+     "Up to 8": 9,
+     "9-11": 9,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 83.3,
+    "vision_concern": null,
+    "dental_finding": 12,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 13,
+    "bmi_histogram": [
+     {
+      "range": "10-14",
+      "count": 10
+     },
+     {
+      "range": "14-20",
+      "count": 8
+     }
+    ]
+   },
+   "Male|all|all|no|dental_finding": {
+    "n": 12,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 12
+    },
+    "age_counts": {
+     "Up to 8": 5,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.9,
+    "normal_bmi_pct": 75.0,
+    "vision_concern": 0,
+    "dental_finding": 12,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 12,
+    "bmi_histogram": [
+     {
+      "range": "10-20",
+      "count": 12
+     }
+    ]
+   },
+   "Male|all|Normal|all|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 15
+    },
+    "age_counts": {
+     "Up to 8": 8,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 15,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 9,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 8
+     },
+     {
+      "range": "14-16",
+      "count": 7
+     }
+    ]
+   },
+   "Male|all|Normal|all|dental_finding": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 9
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 9,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 9,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 9
+     }
+    ]
+   },
+   "Male|all|Normal|no|all": {
+    "n": 15,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 15
+    },
+    "age_counts": {
+     "Up to 8": 8,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 15,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 9,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 10,
+    "bmi_histogram": [
+     {
+      "range": "12-14",
+      "count": 8
+     },
+     {
+      "range": "14-16",
+      "count": 7
+     }
+    ]
+   },
+   "Male|all|Normal|no|dental_finding": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 9
+    },
+    "age_counts": null,
+    "bmi_status_counts": {
+     "Normal": 9,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.8,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 9,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 9,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 9
+     }
+    ]
+   },
+   "Male|Up to 8|all|all|all": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 9,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.5,
+    "normal_bmi_pct": 88.9,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 9
+     }
+    ]
+   },
+   "Male|Up to 8|all|all|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 5,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.1,
+    "normal_bmi_pct": null,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 5
+     }
+    ]
+   },
+   "Male|Up to 8|all|no|all": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 9,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.5,
+    "normal_bmi_pct": 88.9,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 9
+     }
+    ]
+   },
+   "Male|Up to 8|all|no|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 5,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 13.1,
+    "normal_bmi_pct": null,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "10-16",
+      "count": 5
+     }
+    ]
+   },
+   "Male|Up to 8|Normal|all|all": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 8
+    },
+    "age_counts": {
+     "Up to 8": 8,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": null,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": null,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 8
+     }
+    ]
+   },
+   "Male|Up to 8|Normal|no|all": {
+    "n": 8,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 8
+    },
+    "age_counts": {
+     "Up to 8": 8,
+     "9-11": 0,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 8,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 13.7,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": null,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": null,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 8
+     }
+    ]
+   },
+   "Male|9-11|all|all|all": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 9,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.6,
+    "normal_bmi_pct": 77.8,
+    "vision_concern": null,
+    "dental_finding": 7,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 9
+     }
+    ]
+   },
+   "Male|9-11|all|all|dental_finding": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.5,
+    "normal_bmi_pct": 71.4,
+    "vision_concern": 0,
+    "dental_finding": 7,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 7
+     }
+    ]
+   },
+   "Male|9-11|all|no|all": {
+    "n": 9,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 9
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 9,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.6,
+    "normal_bmi_pct": 77.8,
+    "vision_concern": null,
+    "dental_finding": 7,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 8,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 9
+     }
+    ]
+   },
+   "Male|9-11|all|no|dental_finding": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": null,
+    "avg_bmi": 14.5,
+    "normal_bmi_pct": 71.4,
+    "vision_concern": 0,
+    "dental_finding": 7,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 7,
+    "bmi_histogram": [
+     {
+      "range": "12-20",
+      "count": 7
+     }
+    ]
+   },
+   "Male|9-11|Normal|all|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.2,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 7
+     }
+    ]
+   },
+   "Male|9-11|Normal|all|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 5,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 5,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 5
+     }
+    ]
+   },
+   "Male|9-11|Normal|no|all": {
+    "n": 7,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 7
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 7,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 7,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.2,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": null,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 6,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 7
+     }
+    ]
+   },
+   "Male|9-11|Normal|no|dental_finding": {
+    "n": 5,
+    "gender_counts": {
+     "Female": 0,
+     "Male": 5
+    },
+    "age_counts": {
+     "Up to 8": 0,
+     "9-11": 5,
+     "12-14": 0,
+     "15-17": 0
+    },
+    "bmi_status_counts": {
+     "Normal": 5,
+     "Overweight": 0,
+     "Underweight": 0
+    },
+    "avg_bmi": 14.0,
+    "normal_bmi_pct": 100.0,
+    "vision_concern": 0,
+    "dental_finding": 5,
+    "nutrition_finding": 0,
+    "acute_illness": 0,
+    "referral": 0,
+    "requiring_attention": 5,
+    "bmi_histogram": [
+     {
+      "range": "12-16",
+      "count": 5
+     }
+    ]
+   }
+  }
+ }
+}
