@@ -340,6 +340,10 @@ a { color: var(--teal-700); }
   color: var(--ink-soft);
 }
 .chart-card .chart-note:empty { display: none; }
+
+/* The priority card sits below the section heading inside its column, so it must size to
+   its content - height:100% made it taller than the column and spill into the next section. */
+#priorityAreas { height: auto; }
 .chart-wrap { position: relative; height: 280px; }
 .chart-wrap.tall { height: 340px; }
 
