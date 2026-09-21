@@ -32,6 +32,98 @@ const CampCharts = (() => {
 
   const charts = {};
 
+  const fmtPct = (v, total) => (total ? Math.round((v / total) * 1000) / 10 : 0);
+
+  /**
+   * Built-in labelling plugin (no extra CDN needed):
+   *  - bars: the student count at the end of every bar ("<5" for hidden cells)
+   *  - doughnuts: count + percentage on each slice, and the total in the centre
+   *  - any chart with nothing to draw: an explanatory message
+   */
+  const valueLabels = {
+    id: "valueLabels",
+    afterDatasetsDraw(chart) {
+      const ds = chart.data.datasets[0];
+      if (!ds) return;
+      const { ctx, chartArea } = chart;
+      const type = chart.config.type;
+      const fontFamily = Chart.defaults.font.family;
+      const small = chart.width < 420;
+      ctx.save();
+      ctx.textBaseline = "middle";
+
+      const hasData = chart.data.labels.length > 0 && ds.data.some((v) => v !== null && v !== undefined);
+      if (!hasData) {
+        ctx.textAlign = "center";
+        ctx.font = `500 13px ${fontFamily}`;
+        const msg = "Not shown — fewer than 5 students in a group";
+        const cx = (chartArea.left + chartArea.right) / 2;
+        const cy = (chartArea.top + chartArea.bottom) / 2;
+        const w = Math.min(ctx.measureText(msg).width + 24, chart.width - 8);
+        ctx.fillStyle = "#fff";                       // clean backing so gridlines don't cross the text
+        ctx.fillRect(cx - w / 2, cy - 16, w, 32);
+        ctx.fillStyle = palette.inkSoft;
+        ctx.fillText(msg, cx, cy, w - 12);
+        ctx.restore();
+        return;
+      }
+
+      const meta = chart.getDatasetMeta(0);
+
+      if (type === "bar") {
+        const horizontal = chart.options.indexAxis === "y";
+        ctx.font = `700 ${small ? 11 : 12.5}px ${fontFamily}`;
+        meta.data.forEach((bar, i) => {
+          const v = ds.data[i];
+          const hidden = v === null || v === undefined;
+          ctx.fillStyle = hidden ? palette.inkSoft : palette.ink;
+          const text = hidden ? "<5" : String(v);
+          if (horizontal) {
+            const x0 = hidden ? chart.scales.x.getPixelForValue(0) : bar.x;
+            ctx.textAlign = "left";
+            ctx.fillText(text, x0 + 7, bar.y);
+          } else {
+            const y0 = hidden ? chart.scales.y.getPixelForValue(0) : bar.y;
+            ctx.textAlign = "center";
+            ctx.fillText(text, bar.x, y0 - 11);
+          }
+        });
+      } else if (type === "doughnut") {
+        const total = ds.data.reduce((a, b) => a + (b || 0), 0);
+        if (total > 0) {
+          // count + % on each slice big enough to hold text
+          meta.data.forEach((arc, i) => {
+            const v = ds.data[i];
+            const share = v / total;
+            if (!v || share < 0.07) return;       // tiny slice: the legend carries its numbers
+            const pos = arc.tooltipPosition();
+            ctx.textAlign = "center";
+            ctx.fillStyle = "#fff";
+            ctx.shadowColor = "rgba(0,0,0,0.35)";
+            ctx.shadowBlur = 3;
+            ctx.font = `700 ${small ? 12 : 14}px ${fontFamily}`;
+            ctx.fillText(String(v), pos.x, pos.y - 7);
+            ctx.font = `600 ${small ? 10 : 11}px ${fontFamily}`;
+            ctx.fillText(`${fmtPct(v, total)}%`, pos.x, pos.y + 8);
+            ctx.shadowBlur = 0;
+          });
+          // total in the middle of the ring
+          const cx = (chartArea.left + chartArea.right) / 2;
+          const cy = (chartArea.top + chartArea.bottom) / 2;
+          ctx.textAlign = "center";
+          ctx.fillStyle = palette.ink;
+          ctx.font = `700 ${small ? 20 : 24}px ${fontFamily}`;
+          ctx.fillText(String(total), cx, cy - 8);
+          ctx.fillStyle = palette.inkSoft;
+          ctx.font = `500 ${small ? 10 : 11}px ${fontFamily}`;
+          ctx.fillText("students", cx, cy + 12);
+        }
+      }
+      ctx.restore();
+    },
+  };
+  Chart.register(valueLabels);
+
   const categoricalColors = [
     palette.teal600, palette.marigold500, palette.rose600,
     palette.teal900, palette.marigold600, palette.teal500, "#8A6BBE", "#4C8FCB",
@@ -62,19 +154,41 @@ const CampCharts = (() => {
         cutout: "62%",
         animation: { animateRotate: true, duration: 900 },
         plugins: {
-          legend: { position: "bottom" },
+          legend: {
+            position: "bottom",
+            labels: {
+              padding: 14,
+              font: { size: 12.5 },
+              // legend text shows the numbers too, e.g. "Female: 94 (83.9%)"
+              generateLabels(chart) {
+                const base = Chart.overrides.doughnut.plugins.legend.labels.generateLabels(chart);
+                const vals = chart.data.datasets[0].data;
+                const total = vals.reduce((a, b) => a + (b || 0), 0);
+                return base.map((item) => {
+                  const v = vals[item.index];
+                  item.text = `${item.text}: ${v} (${fmtPct(v, total)}%)`;
+                  return item;
+                });
+              },
+            },
+          },
           tooltip: {
             callbacks: {
               label: (item) => {
                 const total = item.dataset.data.reduce((a, b) => a + b, 0);
-                const p = total ? Math.round((item.raw / total) * 1000) / 10 : 0;
-                return ` ${item.label}: ${item.raw} (${p}%)`;
+                return ` ${item.label}: ${item.raw} students (${fmtPct(item.raw, total)}%)`;
               },
             },
           },
         },
       },
     });
+  }
+
+  function axisTitle(text) {
+    return text
+      ? { display: true, text, color: palette.inkSoft, font: { size: 12, weight: "600" }, padding: 8 }
+      : { display: false };
   }
 
   function makeBar(ctxId, labels, data, opts = {}) {
@@ -97,10 +211,26 @@ const CampCharts = (() => {
         responsive: true,
         maintainAspectRatio: false,
         animation: { duration: 800, easing: "easeOutQuart" },
-        plugins: { legend: { display: false } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (item) => ` ${item.raw ?? "<5"} students` } },
+        },
         scales: {
-          x: { grid: opts.horizontal ? gridOpts() : { display: false }, beginAtZero: true },
-          y: { grid: opts.horizontal ? { display: false } : gridOpts(), beginAtZero: true },
+          // headroom (grace) leaves space for the value written at the end of each bar
+          x: {
+            grid: opts.horizontal ? gridOpts() : { display: false },
+            beginAtZero: true,
+            grace: opts.horizontal ? "12%" : 0,
+            title: axisTitle(opts.xTitle),
+            ticks: opts.horizontal ? { precision: 0 } : {},
+          },
+          y: {
+            grid: opts.horizontal ? { display: false } : gridOpts(),
+            beginAtZero: true,
+            grace: opts.horizontal ? 0 : "12%",
+            title: axisTitle(opts.yTitle),
+            ticks: opts.horizontal ? {} : { precision: 0 },
+          },
         },
       },
     });
@@ -125,7 +255,7 @@ const CampCharts = (() => {
       "chartAge",
       d.demographics.age_distribution.map((a) => a.group + " yrs"),
       d.demographics.age_distribution.map((a) => a.count),
-      { color: palette.teal600 }
+      { color: palette.teal600, xTitle: "Age group (years)", yTitle: "Number of students" }
     );
 
     // C. BMI status
@@ -138,7 +268,7 @@ const CampCharts = (() => {
       "chartBmiHist",
       d.bmi.histogram.map((b) => b.range),
       d.bmi.histogram.map((b) => b.count),
-      { color: palette.teal500, label: "Students" }
+      { color: palette.teal500, label: "Students", xTitle: "BMI (kg/m²)", yTitle: "Number of students" }
     );
 
     // E. Vision
@@ -146,7 +276,7 @@ const CampCharts = (() => {
       "chartVision",
       ["Normal", "Requires Attention", "Right-Eye Concern", "Left-Eye Concern", "Not Tested"],
       [d.vision.normal_count, d.vision.concern_count, d.vision.right_eye_concern_count, d.vision.left_eye_concern_count, d.vision.not_tested_count],
-      { color: palette.marigold500 }
+      { color: palette.marigold500, xTitle: "Vision result", yTitle: "Number of students" }
     );
 
     // F. Dental findings (horizontal)
@@ -154,7 +284,7 @@ const CampCharts = (() => {
       "chartDental",
       d.dental.findings.map((f) => f.finding),
       d.dental.findings.map((f) => f.count),
-      { horizontal: true, color: palette.teal600 }
+      { horizontal: true, color: palette.teal600, xTitle: "Number of students", yTitle: "Dental finding" }
     );
 
     // G. Nutrition / general health
@@ -163,7 +293,7 @@ const CampCharts = (() => {
         "chartNutrition",
         d.nutrition_general_health.findings.map((f) => f.finding),
         d.nutrition_general_health.findings.map((f) => f.count),
-        { color: palette.rose600 }
+        { color: palette.rose600, xTitle: "Nutrition / general-health finding", yTitle: "Number of students" }
       );
     }
 
@@ -181,7 +311,7 @@ const CampCharts = (() => {
       illnessData.push(cItem.count);
       illnessColors.push(palette.teal700);
     });
-    charts.illness = makeBar("chartIllness", illnessLabels, illnessData, { horizontal: true, color: illnessColors });
+    charts.illness = makeBar("chartIllness", illnessLabels, illnessData, { horizontal: true, color: illnessColors, xTitle: "Number of students", yTitle: "Illness (past month)" });
   }
 
   /**
