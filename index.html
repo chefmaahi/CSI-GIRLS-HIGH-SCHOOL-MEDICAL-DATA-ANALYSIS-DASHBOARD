@@ -87,7 +87,7 @@
         <div class="col-lg-4">
           <div class="photo-feature reveal">
             <img src="images/img-3.jpeg" alt="Students queued for health screening registration" loading="lazy">
-            <div class="caption">Registration &amp; Health Screening — C.S.I. Girls High School</div>
+            <div class="caption">Health Screening — C.S.I. Girls High School</div>
           </div>
         </div>
       </div>
@@ -271,94 +271,6 @@
         <button class="carousel-control-next" type="button" data-bs-target="#campCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
         </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==================== FILTERS + TABLE ==================== -->
-  <section class="section">
-    <div class="container-xl px-3 px-lg-4">
-      <div class="section-head">
-        <span class="section-kicker"><i class="bi bi-sliders"></i> Explore the data</span>
-        <h2>Filter &amp; browse indicators</h2>
-        <p>Filters update the KPI cards and the gender, age and BMI charts from pre-computed group totals — no individual record exists in the published data, and any group of fewer than 5 students is hidden.</p>
-      </div>
-
-      <div class="filter-bar reveal mb-4">
-        <div class="filter-field">
-          <label for="filterGender">Gender</label>
-          <select id="filterGender" class="form-select">
-            <option value="all">All</option>
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-          </select>
-        </div>
-        <div class="filter-field">
-          <label for="filterAge">Age Group</label>
-          <select id="filterAge" class="form-select">
-            <option value="all">All</option>
-            <option value="Up to 8">Up to 8 yrs</option>
-            <option value="9-11">9–11 yrs</option>
-            <option value="12-14">12–14 yrs</option>
-            <option value="15-17">15–17 yrs</option>
-          </select>
-        </div>
-        <div class="filter-field">
-          <label for="filterBmi">BMI Status</label>
-          <select id="filterBmi" class="form-select">
-            <option value="all">All</option>
-            <option value="Normal">Normal</option>
-            <option value="Overweight">Overweight</option>
-            <option value="Underweight">Underweight</option>
-          </select>
-        </div>
-        <div class="filter-field">
-          <label for="filterReferral">Referral Status</label>
-          <select id="filterReferral" class="form-select">
-            <option value="all">All</option>
-            <option value="yes">Specialist Referral Advised</option>
-            <option value="no">No Referral Advised</option>
-          </select>
-        </div>
-        <div class="filter-field">
-          <label for="filterFinding">Health Finding</label>
-          <select id="filterFinding" class="form-select">
-            <option value="all">All</option>
-            <option value="vision_concern">Vision Concern</option>
-            <option value="dental_finding">Dental Finding</option>
-            <option value="nutrition_finding">Nutrition Finding</option>
-            <option value="acute_illness">Acute Illness</option>
-          </select>
-        </div>
-        <button class="btn-reset-filters" id="resetFilters"><i class="bi bi-arrow-counterclockwise"></i> Reset Filters</button>
-        <span class="filter-status" id="filterStatus"></span>
-      </div>
-
-      <div class="table-card reveal">
-        <div class="table-toolbar">
-          <h3 class="mb-0">Screening Indicator Summary</h3>
-          <input type="search" id="tableSearch" class="form-control" placeholder="Search indicators…">
-        </div>
-        <div class="table-responsive">
-          <table class="table" id="summaryTable">
-            <thead>
-              <tr>
-                <th data-col="indicator">Health Indicator</th>
-                <th data-col="students">Students</th>
-                <th data-col="percent">Percentage</th>
-                <th data-col="status">Status</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-        <div class="d-flex justify-content-between align-items-center mt-2">
-          <span class="text-body-secondary small" id="tablePageInfo"></span>
-          <div class="btn-group">
-            <button class="btn btn-outline-secondary btn-sm" id="prevPage"><i class="bi bi-chevron-left"></i></button>
-            <button class="btn btn-outline-secondary btn-sm" id="nextPage"><i class="bi bi-chevron-right"></i></button>
-          </div>
-        </div>
       </div>
     </div>
   </section>
