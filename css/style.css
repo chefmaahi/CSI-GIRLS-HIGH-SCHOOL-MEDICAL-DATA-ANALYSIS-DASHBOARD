@@ -127,6 +127,8 @@ a { color: var(--teal-700); }
   object-fit: contain;
 }
 
+.top-bar img.org-logo-combo { height: 54px; }
+
 .logo-divider {
   width: 1px;
   height: 28px;
@@ -594,6 +596,7 @@ footer .org-logos img {
   padding: 4px 8px;
   border-radius: 8px;
 }
+footer .org-logos img.org-logo-combo { height: 44px; padding: 6px 12px; }
 
 /* ---------------------------------------------------------------------- */
 /* Misc / responsive                                                      */
